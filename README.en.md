@@ -22,11 +22,11 @@ A low-key graphite theme for DeepSeek Harness: a dark mecha wallpaper behind tra
 ## Install
 
 ```sh
-# from GitHub
-dsh plugin add github:machi12/dsh-gundam-graphite-theme
-
-# from a local tarball
+# from a GitHub release tarball (works offline)
 dsh plugin add ./dsh-gundam-graphite-theme.tgz
+
+# or straight from the repository (pnpm may ask to allow the git dependency's build)
+dsh plugin add github:machi12/dsh-gundam-graphite-theme
 ```
 
 Or install it from the plugin market’s **Themes** tab. Add `--profile <name>` to target a specific profile. Restart DSH afterwards, then open **Settings → General → 高达 · 石墨**.
