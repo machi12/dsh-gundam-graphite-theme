@@ -1,0 +1,6 @@
+node_modules/
+*.tgz
+.npm-cache/
+.playwright-cli/
+output/
+.DS_Store
