@@ -59,18 +59,21 @@ DeepSeek Harness 的黑灰机甲主题皮肤：内置黑灰高达壁纸，把侧
 
 DSH 插件市场 → 分类「主题」→「高达 · 石墨」→ 安装，然后重启应用。装好后在 **设置 → 通用设置 → 高达 · 石墨** 里调整效果。
 
-### 方式二：命令行
+### 方式二：下载 Release 包（离线 / 内网可用）
+
+从 [Releases](https://github.com/machi12/dsh-gundam-graphite-theme/releases/latest) 下载 `dsh-gundam-graphite-theme.tgz`，然后：
 
 ```sh
-# 从 GitHub 安装
-dsh plugin add github:machi12/dsh-gundam-graphite-theme
-
-# 或从本地 tarball 安装
 dsh plugin add ./dsh-gundam-graphite-theme.tgz
-
-# 或从本地目录安装
-dsh plugin add ./dsh-gundam-graphite-theme
 ```
+
+### 方式三：从 GitHub 源码安装
+
+```sh
+dsh plugin add github:machi12/dsh-gundam-graphite-theme
+```
+
+pnpm 会把 Git 依赖当作需要构建的包：首次安装若提示把 `dsh-gundam-graphite-theme` 加进 `allowBuilds`，按提示加入后重试即可（包本身已带预构建的 `lib/`，不需要真正编译）。
 
 安装到指定配置时加 `--profile <name>`，例如桌面版：
 
